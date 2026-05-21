@@ -7,3 +7,13 @@ for (i=0; i<num.length; i++){
     }
 }
 console.log(largest)
+
+
+
+// using filter method
+
+let arr = [21, 24, 46, 657,23,95, 686, 94, 83,23]
+let n=arr.filter((x)=>{
+     return x%3==0
+})
+console.log(n)
