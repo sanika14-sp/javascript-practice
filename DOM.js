@@ -52,3 +52,6 @@ array.forEach((element)=>{
 
 
 
+/*setInterval(function(){
+bulb.classList.toggle("color");
+},200);*/
