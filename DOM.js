@@ -15,20 +15,40 @@ array.forEach((element)=>{
 })
 
 
-document.addEventListener("click",function(e){
-    switch(e.target.id){
-        case "btn1":
-            alert("Wrong answer");
-            break;
-        case "btn2":
-            alert("Correct answer");
-            break;
-        case "btn3":
-            alert("Wrong answer");
-            break;
-        case "btn4":
-            alert("Wrong answer");
-            break;
+//document.addEventListener("click",function(e){
+    //switch(e.target.id){
+       // case "btn1":
+           // alert("Wrong answer");
+           // break;
+        //case "btn2":
+           // alert("Correct answer");
+          //  break;
+        //case "btn3":
+            //alert("Wrong answer");
+           // break;
+        //case "btn4":
+           // alert("Wrong answer");
+           /* break;
 
     }
-})
+//})*/
+
+//document.getElementById("google").addEventListener("click",function(e){
+   // if(e.target.id=="google"){
+      //  window.open("https://www.google.com");
+//}
+//})
+//document.getElementById("chatgpt").addEventListener("click",function(e){
+    //if(e.target.id=="chatgpt"){
+       // window.open("https://www.chatgpt.com");
+   // }
+//})
+//document.getElementById("insta").addEventListener("click",function(e){
+   // if(e.target.id=="insta"){
+       // window.open("https://www.instagram.com");
+   // }
+//})
+
+
+
+
