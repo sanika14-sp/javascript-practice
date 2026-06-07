@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Digital Clock </title>
+</head>
+<style>
+    #clock{
+        background-color: black;
+        width: 700px;
+        height: 300px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        position: relative;
+        top: 100px;
+        }
+    #screen{
+        background-color: rgb(231, 229, 229);
+        width: 650px;
+        height: 250px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    #time{
+        font-size: 100px;
+        font-family:digital-7, sans-serif;
+        font-weight: bold;
+        text-align: center;
+
+    }
+    #date{
+        font-size: 20px;
+        font-family: digital-7, sans-serif;
+        text-align: left;
+        position: relative;
+        top: 40px;
+        left: 70px;
+    }
+    #day{
+        font-size: 20px;
+        font-family: digital-7, sans-serif;
+        text-align: right;
+        position: relative;
+        top: 15px;
+        right: 70px;
+    }
+
+</style>
+<body>
+    <div id="clock">
+        <div id="screen">
+           <div id="time"></div>
+           <div id="date"></div>
+           <div id="day"></div>
+        </div>
+    </div>
+    <script src="Clock.js"></script>
+</body>     
+</html>
