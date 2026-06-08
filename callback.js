@@ -33,9 +33,38 @@ step1(()=>{
 //promises
 
 function p1(){
-    new Promise((resolve,reject)=>{
-        setTimeout(()=>
-        console.log("P1 completed successfully"))
-        resolve("done") 
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+        console.log("P1 completed successfully");
+        resolve("done") ;
         } ,2000);
+    });
 }
+
+function p2(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+        console.log("P2 completed successfully");
+        resolve("done") ;
+        } ,2000);
+    });
+}
+
+
+function p3(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+        console.log("P3 completed successfully");
+        resolve("done") ;
+        } ,2000);
+    });
+}
+
+p1()
+ .then(p2)
+ .then(p3)
+ .then(()=>{
+    console.log("ALL promises executed successfully")
+ })
+
+      
