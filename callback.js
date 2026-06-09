@@ -68,3 +68,19 @@ p1()
  })
 
       
+// async and await 
+
+function steps(ms,name){
+    new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+     console.log("completed",name)
+     resolve();
+    },ms);
+    })
+}
+async function work(){
+    await steps(2000,"step 1");
+    await steps(4000,"step 2");
+    await steps(6000,"step 3");
+}
+work();
