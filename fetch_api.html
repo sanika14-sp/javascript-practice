@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random User</title>
 </head>
+<style>
+    div{
+        background-color: floralwhite;
+        font-family: Arial, Helvetica, sans-serif;
+        
+
+    }
+</style>
 <body>
     <h1>Find a random user</h1>
     <div id="info">
-      <button id="user" onclick="getData()">Get User</button>
+      <button onclick="getUser()"> Get user </button>
+      <h2 id="name"></h2>
+      <p id ="email"></p>
+      <img id="photo" width="150"></img>
+      <p id="location"></p>
+      <p id="no"></p>
     </div>
     <script src="fetch_api.js"></script>
 </body>
