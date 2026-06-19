@@ -6,15 +6,17 @@
     <title>TO-DO list </title>
 </head>
 <body>
-    <div id="list">
-     <button id="create">CREATE TO-DO</button>
-     <button id="delete">DELETE TO-DO</button>
-     <button id="all">VIEW ALL</button>
-    </div>
-    <div id="element">
-     <button id="add">ADD ELEMENT</button>
-     <button id="remove">REMOVE ELEMENT</button>
-    </div>
-    
+    <h2>TO-DO LIST</h2>
+   <div id="input">
+      <input type="text" id="input_box"><br>
+      <button id="input_btn" onclick="Create_todo()">Create To-Do</button>
+   </div><br>
+     <div id="delete">
+      <button id="delete_btn" onclick="Delete_todo()" >Delete To-Do</button>
+   </div><br>
+   <div id="display">
+      <p> All Tasks </p>
+   </div><br>
+   <script src="TODO.js"></script>
 </body>
 </html>
