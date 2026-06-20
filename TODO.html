@@ -5,23 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO-DO list </title>
 </head>
+<style>
+   body{
+      background-color: rgb(220, 118, 220);
+   }
+   
+   div{
+      background-color:white;
+      color: black;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      border-radius: 20px;
+      font-size: 20px;
+   }
+   
+   input{
+      border-radius: 20px;
+      font-size: 20px;
+   }
+
+   button{
+      border-radius: 20px;
+      font-size: 20px;
+      background-color: rgb(169, 66, 200);
+   }
+
+</style>
+
 <body>
-    <h2>TO-DO LIST</h2>
+    <h1 align="center">TO-DO LIST</h1>
    <div id="input">
-      <input type="text" id="input_box"><br>
-      <button id="input_btn" onclick="Create_todo()">Create To-Do</button>
+      <input type="text" id="input_box">
+      <button id="input_btn" onclick="Create_todo()">Create</button>
    </div><br>
 
      <div id="delete">
       <input type="number" id="delete_task" placeholder="Enter the number of task">
-      <button id="delete_btn" onclick="Delete_todo()" >Delete To-Do</button>
+      <button id="delete_btn" onclick="Delete_todo()" >Delete</button>
    </div><br>
 
    <div id="display">
       <h4>All Tasks</h4>
       <p> </p>
    </div><br>
-   
+
    <script src="TODO.js"></script>
 </body>
 </html>
