@@ -15,10 +15,10 @@ let displayTodo = () =>{
      let displayDiv= document.getElementById("display")
      displayDiv.innerHTML= "";
 
-     todo.forEach((task)=>{
-        console.log(task);
+     todo.forEach((index,task)=>{
+        console.log(index,task);
         let p = document.createElement("p");
-        p.innerText= task;
+        p.innerText= `${index+1}.${task}`;
         displayDiv.appendChild(p);
 
      })
